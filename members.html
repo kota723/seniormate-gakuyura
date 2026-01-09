@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンバー名鑑 | シニアメイトの楽屋裏</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="site-title">シニアメイトの楽屋裏</a>
+            <div class="menu-toggle">☰</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">楽屋裏について</a></li>
+                    <li><a href="members.html" class="active">メンバー</a></li>
+                    <li><a href="blog.html">読みもの</a></li>
+                    <li><a href="https://www.instagram.com/_labo_seniormate" target="_blank"
+                            rel="noopener">Instagram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">シニアメイト名鑑</h2>
+            <p class="text-center" style="margin-bottom: 40px;">記事を書いてくれてるシニアメイトたちを紹介します</p>
+
+            <div class="member-grid" id="member-list">
+                <!-- Member cards will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/_labo_seniormate" target="_blank">Instagram</a>
+            </div>
+            <p>&copy; 2024 Senior Mate's Backstage. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/members.js"></script>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.main-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
